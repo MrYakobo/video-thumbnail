@@ -3,12 +3,14 @@ This is a simple module meant to generate a "video thumbnail", one of those you 
 
 ## Usage
 
-    var videothumb = require('video-thumbnail')
-    videothumb('input.mp4','output.webm').then(()=>{
-        console.log('Done!')
-    }).catch((err)=>{
-        console.log(err)
-    })
+```javacsript
+var videothumb = require('video-thumbnail')
+videothumb('input.mp4','output.webm').then(()=>{
+    console.log('Done!')
+}).catch((err)=>{
+    console.log(err)
+})
+```
 
 ## Dependencies
 FFmpeg
