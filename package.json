@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "types": "index.d.ts",
   "directories": {
     "test": "test"
   },
@@ -27,6 +28,7 @@
     "opn": "^5.1.0"
   },
   "dependencies": {
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "tmp": "0.0.33"
   }
 }

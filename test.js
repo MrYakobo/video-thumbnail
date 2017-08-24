@@ -7,9 +7,11 @@ var mkdirp = require('mkdirp')
 function cb() {
 	console.log('Now converting and compressing video...')
 
-	videothumb('test/BigBuckBunny_320x180.mp4', 'test/preview.webm').then(() => {
+	videothumb('test/BigBuckBunny_320x180.mp4', 'test/preview.mp4').then(() => {
 		console.log('Now previewing final result:')
-		opn(__dirname + '/test/preview.webm')
+		opn(__dirname + '/test/preview.mp4')
+	}).catch((err)=>{
+		throw err
 	});
 }
 
