@@ -25,21 +25,17 @@ function clip(input, output, start, duration, options) {
 		var cmd = `ffmpeg -y -i ${input} -ss ${timecode(start)} -t ${timecode(duration)} -r 10 -vf "scale=`
 
 		if (w && h) {
-			// cmd += `w=${divisable(options.width)}:h=${divisable(options.height)}`
 			d.w = options.width
 			d.h = options.height
 		} else if (w) {
-			// cmd += `w=${divisable(options.width)}:h=-2`
 			d.w = options.width
 			d.h = "trunc(in_h/2)*2"
 		} else if (h) {
 			d.w = "trunc(in_w/2)*2"
 			d.h = options.height
-			// cmd += `w=-2:h=${divisable(options.height)}`
 		} else {
 			d.w = 300
 			d.h = "trunc(in_h/2)*2"
-			// cmd += `w=300:h=-2`
 		}
 		cmd += `${d.w}:${d.h}" -an ${output}`
 

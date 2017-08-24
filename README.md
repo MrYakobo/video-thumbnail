@@ -15,7 +15,7 @@ videothumb(input, output, options)
 
 Example:
 ```javascript
-videothumb('input.mp4','output.webm', {width: 200}).then(()=>{
+videothumb('input.mp4','output.mp4', {width: 200}).then(()=>{
     console.log('Done!')
 }).catch((err)=>{
     console.log(err)

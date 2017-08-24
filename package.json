@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "types": "index.d.ts",
+  "bin": {
+    "video-thumbnail": "bin.js"
+  },
   "directories": {
     "test": "test"
   },
@@ -28,6 +30,7 @@
     "opn": "^5.1.0"
   },
   "dependencies": {
+    "commander": "^2.11.0",
     "mkdirp": "^0.5.1",
     "tmp": "0.0.33"
   }
