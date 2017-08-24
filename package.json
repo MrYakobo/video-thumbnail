@@ -1,0 +1,32 @@
+{
+  "name": "video-thumbnail",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "video",
+    "thumbnail",
+    "preview",
+    "ffmpeg",
+    "videothumbnail"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrYakobo/video-thumbnail.git"
+  },
+  "author": "Jakob Lindskog <jakob.lindskog@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "download": "^6.2.5",
+    "opn": "^5.1.0"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
+}
