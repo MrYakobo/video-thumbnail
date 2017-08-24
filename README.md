@@ -3,7 +3,7 @@ This is a simple module meant to generate a "video thumbnail", one of those you 
 
 ## Usage
 
-```javacsript
+```javascript
 var videothumb = require('video-thumbnail')
 videothumb('input.mp4','output.webm').then(()=>{
     console.log('Done!')
